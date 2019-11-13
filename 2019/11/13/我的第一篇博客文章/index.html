@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Hexo</title>
+  <title>我的第一篇博客文章 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+  <meta name="description" content="Oracle练习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的第一篇博客文章">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;13&#x2F;%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Oracle练习">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-13T13:55:52.592Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -155,76 +158,300 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      我的第一篇博客文章
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/13/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
+
+        
+        <a href="/2019/11/13/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
   	<time datetime="2019-11-13T13:10:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-13</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/13/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Oracle练习"><a href="#Oracle练习" class="headerlink" title="Oracle练习"></a>Oracle练习</h2> <a id="more"></a> 
 
-        <div class="article-info info-on-right">
-          
-          
+<p>create table student(<br>sno varchar2(10) primary key,<br>sname varchar2(20),<br>sage number(2),<br>ssex varchar2(5)<br>);<br>create table teacher(<br>tno varchar2(10) primary key,<br>tname varchar2(20)<br>);<br>create table course(<br>cno varchar2(10),<br>cname varchar2(20),<br>tno varchar2(20),<br>constraint pk_course primary key (cno,tno)<br>);<br>create table sc(<br>sno varchar2(10),<br>cno varchar2(10),<br>score number(4,2),<br>constraint pk_sc primary key (sno,cno)<br>);<br>–/<strong>***</strong>初始化学生表的数据<strong>**</strong>/<br>insert into student values (‘s001’,’张三’,23,’男’);<br>insert into student values (‘s002’,’李四’,23,’男’);<br>insert into student values (‘s003’,’吴鹏’,25,’男’);<br>insert into student values (‘s004’,’琴沁’,20,’女’);<br>insert into student values (‘s005’,’王丽’,20,’女’);<br>insert into student values (‘s006’,’李波’,21,’男’);<br>insert into student values (‘s007’,’刘玉’,21,’男’);<br>insert into student values (‘s008’,’萧蓉’,21,’女’);<br>insert into student values (‘s009’,’陈萧晓’,23,’女’);<br>insert into student values (‘s010’,’陈美’,22,’女’);<br>commit;<br>–/<strong><strong><strong><strong>**</strong></strong></strong></strong>初始化教师表<strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong>/<br>insert into teacher values (‘t001’, ‘刘阳’);<br>insert into teacher values (‘t002’, ‘谌燕’);<br>insert into teacher values (‘t003’, ‘胡明星’);<br>commit;<br>–/<strong><strong><strong>***</strong></strong></strong>初始化课程表<strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong>/<br>insert into course values (‘c001’,’J2SE’,’t002’);<br>insert into course values (‘c002’,’Java Web’,’t002’);<br>insert into course values (‘c003’,’SSH’,’t001’);<br>insert into course values (‘c004’,’Oracle’,’t001’);<br>insert into course values (‘c005’,’SQL SERVER 2005’,’t003’);<br>insert into course values (‘c006’,’C#’,’t003’);<br>insert into course values (‘c007’,’JavaScript’,’t002’);<br>insert into course values (‘c008’,’DIV+CSS’,’t001’);<br>insert into course values (‘c009’,’PHP’,’t003’);<br>insert into course values (‘c010’,’EJB3.0’,’t002’);<br>commit;<br>–/<strong><strong><strong>***</strong></strong></strong>初始化成绩表<strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong>/<br>insert into sc values (‘s001’,’c001’,78.9);<br>insert into sc values (‘s002’,’c001’,80.9);<br>insert into sc values (‘s003’,’c001’,81.9);<br>insert into sc values (‘s004’,’c001’,60.9);<br>insert into sc values (‘s001’,’c002’,82.9);<br>insert into sc values (‘s002’,’c002’,72.9);<br>insert into sc values (‘s003’,’c002’,81.9);<br>insert into sc values (‘s001’,’c003’,’59’);<br>commit;</p>
+<hr>
+<ol>
+<li><p>查询“c001”课程比“c002”课程成绩高的所有学生的学号；<br>select sno<br>from sc s1<br>where s1.cno=’c001’ and s1.score&gt;</p>
+<pre><code>(select s2.score
+from sc s2
+where s2.cno=&apos;c002&apos; and s1.sno=s2.sno)</code></pre></li>
+<li><p>查询平均成绩大于60 分的同学的学号和平均成绩；<br>select sno,avg(score)<br>from sc<br>group by sno<br>having avg(score)&gt;60;</p>
+</li>
+<li><p>查询所有同学的学号、姓名、选课数、总成绩；<br>select stu.sno,stu.sname,count(sc.cno),sum(sc.score)<br>from student stu left join sc on stu.sno=sc.sno<br>group by stu.sno,stu.sname<br>order by stu.sno;</p>
+</li>
+<li><p>查询姓“刘”的老师的个数；<br>select count(tno)<br>from teacher<br>where tname like’刘%’;</p>
+</li>
+<li><p>查询没学过“谌燕”老师课的同学的学号、姓名；<br>select stu.sno,stu.sname<br>from student stu<br>where stu.sno not in<br>(select distinct sno<br>from sc<br>join course cs on sc.cno=cs.cno<br>join teacher tea on cs.tno=tea.tno and tname=’谌燕’)</p>
+</li>
+<li><p>查询学过“c001”并且也学过编号“c002”课程的同学的学号、姓名；<br>select stu.sno,stu.sname<br>from sc s1 join sc s2 on s1.sno=s2.sno<br>join student stu on stu.sno=s2.sno<br>where s1.cno=’c001’ and s2.cno=’c002’;</p>
+</li>
+<li><p>查询学过“谌燕”老师所教的所有课的同学的学号、姓名；<br>select sno,sname<br>from student<br>where sno in(select sno from sc</p>
+<pre><code>where cno in(select cno from course
+             where tno in(select tno from teacher 
+                          where tname=&apos;谌燕&apos;)));</code></pre></li>
+<li><p>查询课程编号“c002”的成绩比课程编号“c001”课程低的所有同学的学号、姓名；<br>select sno,sname<br>from student<br>where sno in (select a.sno from(select * from sc</p>
+<pre><code>    where cno=&apos;c002&apos;)a,
+    (select * from sc
+    where cno=&apos;c001&apos;)b
+where a.sno=b.sno and a.score&lt;b.score);</code></pre></li>
+<li><p>查询所有课程成绩小于60 分的同学的学号、姓名；<br>select stu.sno,stu.sname<br>from student stu<br>where sno not in<br>(select distinct sno<br>  from sc<br>  where sc.score&gt;=60);</p>
+</li>
+<li><p>查询没有学全所有课的同学的学号、姓名；<br>select stu.sno,stu.sname<br>from student stu<br>where(select count(*) from sc where stu.sno=sc.sno)&lt;(select count(cno) from course);</p>
+</li>
+<li><p>查询至少有一门课与学号为“s001”的同学所学相同的同学的学号和姓名；<br>select sno,sname from student<br>where sno in (select sno from sc</p>
+<pre><code>where cno in (select cno from course
+              where cno in (select cno from sc where sno=&apos;s001&apos;)));</code></pre></li>
+<li><p>查询至少学过学号为“s001”同学所有一门课的其他同学学号和姓名；<br> select sno,sname from student<br> where sno in (select sno from sc<br> where cno in(select cno from course<br> where cno in (select cno from sc where sno=’s001’)) and sno!=’s001’);</p>
+</li>
+<li><p>把“SC”表中“谌燕”老师教的课的成绩都更改为此课程的平均成绩；<br>update sc set score=AVG(score) where cno in (select cno from course where cname=’谌燕’); </p>
+</li>
+<li><p>查询和“s001”号的同学学习的课程完全相同的其他同学学号和姓名；<br> select sno,sname from student<br> where sno in (select sno from sc<br> where cno in(select cno from course<br> where cno in (select cno from sc where sno=’s001’)) a a.cno=sc.cno and sno!=’s001’);</p>
+</li>
+<li><p>删除学习“谌燕”老师课的SC 表记录；<br> delete sc from course,teacher where course.cno=sc.cno and course.tno=teacher.tno and tname=’谌燕’;</p>
+</li>
+<li><p>向SC 表中插入一些记录，这些记录要求符合以下条件：没有上过编号“c002”课程的同学学号、<br>–“c002”号课的平均成绩；<br>insert into sc<br>select sno,’c002’,(select avg(score) </p>
+<pre><code>          from sc where cno=&apos;c002&apos;)
+from student where sno not in
+                           (select sno from sc where cno=&apos;c002&apos;);</code></pre></li>
+</ol>
+<ol start="17">
+<li><p>查询各科成绩最高和最低的分：以如下形式显示：课程ID，最高分，最低分<br>select c.cno,max(s.score),min(s.score)<br>from sc s,course c<br>where c.cno=s.cno<br>group by c.cno</p>
+</li>
+<li><p>按各科平均成绩从低到高和及格率的百分数从高到低顺序<br>select sc.cno as 课程id,avg(sc.score) as 平均成绩,<br>100*sum(case when sc.score&gt;=60 then 1 else 0 end)/count(1)||’%’ as 及格率<br>from sc<br>group by sc.cno<br>order by avg(sc.score),<br>sum(case when sc.score&gt;=60 then 1 else 0 end)/count(1) desc;</p>
+</li>
+<li><p>查询不同老师所教不同课程平均分从高到低显示<br>select max(t.tno), max(t.tname), max(c.cno), max(c.cname),c.cno,avg(score)<br>from sc s,course c,teacher t<br>where s.cno=c.cno and c.tno=t.tno<br>group by c.cno<br>order by avg(score)desc;</p>
+</li>
+<li><p>统计列印各科成绩,各分数段人数:课程ID,课程名称,[100-85],[85-70],[70-60],[ &lt;60]<br>—方法一<br>select s.cno 课程ID,c.cname 课程名称,</p>
+<pre><code>sum(case when s.score between 85 and 100 then 1 else 0 end) &quot;[100-85]&quot;,
+sum(case when s.score between 70 and 85 then 1 else 0 end)  &quot;[85-70]&quot;,
+sum(case when s.score between 60 and 70 then 1 else 0 end)  &quot;[70-60]&quot;,
+sum(case when s.score&lt;60 then 1 else 0 end)  &quot;[ &lt;60]&quot;</code></pre><p>from sc s,course c<br>where s.cno=c.cno<br>group by s.cno,c.cname</p>
+<p>—方法二<br>select s.cno 课程ID,c.cname 课程名称,</p>
+<pre><code>sum(case when s.score&gt;85 and s.score&lt;100 then 1 else 0 end) as  &quot;[100-85]&quot;,
+sum(case when s.score&gt;70 and s.score&lt;85 then 1 else 0 end) as  &quot;[85-70]&quot;,
+sum(case when s.score&gt;60 and s.score&lt;70 then 1 else 0 end) as &quot;[70-60]&quot;,
+sum(case when s.score&lt;60 then 1 else 0 end) as  &quot;[ &lt;60]&quot;</code></pre><p>from sc s,course c<br>where s.cno=c.cno<br>group by s.cno,c.cname</p>
+</li>
+<li><p>查询各科成绩前三名的记录:(不考虑成绩并列情况)<br>–row_number() 为返回的记录定义各行编号<br>–pritition by 分组<br>–order by 排序<br>select *<br>from(select sno,cno,row_number()over(partition by cno </p>
+<pre><code>                                order by score desc) rn 
+from sc)</code></pre><p>where rn&lt;4;</p>
+</li>
+<li><p>查询每门课程被选修的学生数<br>select c.cno,c.cname,count(1)<br>from sc join course c on sc.cno=c.cno<br>group by c.cno,c.cname;</p>
+</li>
+<li><p>查询出只选修了一门课程的全部学生的学号和姓名<br>select stu.sno,stu.sname<br>from student stu join sc on stu.sno=sc.sno<br>group by stu.sno,stu.sname<br>having count(sc.cno)=1;</p>
+</li>
+<li><p>查询男生、女生人数<br>select ssex,count(1)<br>from student<br>group by ssex;</p>
+</li>
+<li><p>查询姓“张”的学生名单<br>select sname<br>from student<br>where sname like ‘张%’;</p>
+</li>
+<li><p>查询同名同性学生名单，并统计同名人数<br>select sname,count(1)<br>from student<br>group by sname having count(1)&gt;1</p>
+</li>
+<li><p>1981 年出生的学生名单(注：Student 表中Sage 列的类型是number)<br>select *<br>from student stu<br>where to_char(sysdate,’yyyy’)-sage =1981;</p>
+</li>
+<li><p>查询每门课程的平均成绩，结果按平均成绩升序排列，平均成绩相同时，按课程号降序排列<br>select avg(score)<br>from sc<br>group by(cno)<br>order by avg(score) asc,cno desc;</p>
+</li>
+<li><p>查询平均成绩大于85 的所有学生的学号、姓名和平均成绩<br>select sc.sno,stu.sname,avg(sc.score)<br>from student stu join sc on stu.sno=sc.sno<br>group by sc.sno,stu.sname<br>having avg(sc.score) &gt; 85;</p>
+</li>
+<li><p>查询课程名称为“数据库”，且分数低于60 的学生姓名和分数<br>select stu.sname,sc.score<br>from student stu<br>join sc on stu.sno=sc.sno<br>join course c on c.cno=sc.cno<br>where c.cname=’数据库’<br>and sc.score&lt;60;</p>
+</li>
+<li><p>查询所有学生的选课情况；<br>select stu.sno,stu.sname,c.cname,sc.score<br>from student stu,sc,course c<br>where stu.sno=sc.sno and c.cno=sc.cno<br>order by stu.sno;</p>
+</li>
+<li><p>查询任何一门课程成绩在70 分以上的姓名、课程名称和分数；<br>select stu.sname,c.cname,sc.score<br>from student stu<br>join sc on stu.sno=sc.sno<br>join course c on sc.cno=c.cno<br>where sc.score&gt;70;</p>
+</li>
+<li><p>查询不及格的课程，并按课程号从大到小排列<br>select c.cno,c.cname,sc.score<br>from course c join sc on c.cno=sc.cno<br>where score&lt;60<br>order by c.cno asc;</p>
+</li>
+<li><p>查询课程编号为c001 且课程成绩在80 分以上的学生的学号和姓名；<br>select stu.sno,stu.sname<br>from student stu join sc on stu.sno=sc.sno<br>where sc.cno=’c001’<br>and sc.score&gt;80;</p>
+</li>
+<li><p>求选了课程的学生人数<br>select count(distinct sno)<br>from sc; </p>
+</li>
+<li><p>查询选修“谌燕”老师所授课程的学生中，成绩最高的学生姓名及其成绩<br>select s.cno,stu.sname,s.score<br>from student stu<br>join sc s on stu.sno=s.sno<br>join course c on c.cno=s.cno<br>join teacher tc on tc.tno=c.tno<br>where tc.tname=’谌燕’ and score=(select max(score) from sc where sc.cno=s.cno);</p>
+</li>
+<li><p>查询各个课程及相应的选修人数<br>select cno,count(1)<br>from sc<br>group by cno;</p>
+</li>
+<li><p>查询不同课程成绩相同的学生的学号、课程号、学生成绩<br>select s1.sno,s1.cno,s1.score<br>from sc s1 join sc s2 on s1.score=s2.score<br>where s1.cno&lt;&gt;s2.cno;</p>
+</li>
+<li><p>查询每门功课成绩最好的前两名<br>select *<br>from (select stu.sname,sc.sno,sc.cno,row_number()over(partition by cno order by score desc) rn </p>
+<pre><code>from sc join student stu on sc.sno=stu.sno)</code></pre><p>where rn &lt; 3;</p>
+</li>
+<li><p>统计每门课程的学生选修人数（超过10 人的课程才统计）。<br>要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列<br>select cno,count(sno)<br>from sc<br>group by cno<br>having count(sno)&gt;10<br>order by count(sno) desc,cno asc;</p>
+</li>
+<li><p>检索至少选修两门课程的学生学号<br>select sno,count(1)<br>from sc<br>group by sno<br>having count(1)&gt;1;</p>
+</li>
+<li><p>查询全部学生都选修的课程的课程号和课程名<br>select sc.cno,c.cname<br>from course c join sc on sc.cno=c.cno<br>group by sc.cno,c.cname<br>having count(1)=(select count(1) from student);</p>
+</li>
+<li><p>查询没学过“谌燕”老师讲授的任一门课程的学生姓名<br>select stu.sname<br>from student stu<br>where stu.sno not in<br>  (select distinct sno<br>  from sc<br>  join course c on sc.cno=c.cno<br>  join teacher tc on c.tno=tc.tno<br>  where tc.tname=’谌燕’);</p>
+</li>
+<li><p>查询两门以上不及格课程的同学的学号及其平均成绩<br>select sno,avg(score) from sc where sno in<br>(select sno<br>from sc where score&lt;60<br>group by sno<br>having count(sno)&gt;2)<br>group by sno;</p>
+</li>
+<li><p>检索“c004”课程分数小于60，按分数降序排列的同学学号<br>select sno from sc where cno=’c004’ and score&lt;60 order by score desc;</p>
+</li>
+<li><p>删除“s002”同学的“c001”课程的成绩<br>delete from sc where sno=’s002’ and cno=’c001’;</p>
+</li>
+</ol>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wechat.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/13/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/13/hello-world/" class="archive-article-date">
-  	<time datetime="2019-11-13T02:01:08.545Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-13</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Oracle练习"><span class="toc-number">1.</span> <span class="toc-text">Oracle练习</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -247,8 +474,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
